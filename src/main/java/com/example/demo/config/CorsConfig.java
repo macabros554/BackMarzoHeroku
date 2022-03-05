@@ -12,7 +12,7 @@ public class CorsConfig implements WebMvcConfigurer {
 	public WebMvcConfigurer corsConfigurer() {return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				String ruta="https://macabros554.github.io/FrontMarzo2/";
+				String ruta="https://macabros554.github.io";
 				//login
 				registry.addMapping("/auth/login").allowedOrigins(ruta)
 		        .allowedHeaders("GET", "POST", "OPTIONS", "PUT", "Content-Type", "X-Requested-With", "accept", "Origin", "Access-Control-Request-Method",
